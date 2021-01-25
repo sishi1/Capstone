@@ -7,7 +7,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.capstone.R
 import com.example.capstone.databinding.ActivityDashboardBinding
-import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -29,7 +28,7 @@ class DashboardActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.dashboard_nav_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
-        bottom_nav.setOnNavigationItemSelectedListener { bottomNavigationClickHandler(it) }
+        binding.bottomNav.setOnNavigationItemSelectedListener { bottomNavigationClickHandler(it) }
     }
 
     private fun bottomNavigationClickHandler(item: MenuItem): Boolean {

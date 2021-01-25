@@ -15,4 +15,10 @@
     <string name="page_search">Search</string>
     <string name="page_profile">Profile</string>
 
+    <!-- Strings used for homepage -->
+    <string name="tv_news">Link to the news</string>
+    <string name="tv_status">Link to the status</string>
+    <string name="tv_twitter">Link to Twitter</string>
+    <string name="tv_twitch">Link to Twitch</string>
+
 </resources>
