@@ -8,6 +8,8 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.capstone.R
 import com.example.capstone.databinding.ActivityDashboardBinding
 
+const val ARG_LAYOUT = "arg_layout"
+
 class DashboardActivity : AppCompatActivity() {
 
     enum class HOMEPAGE_NAVIGATION_DESTINATION {
@@ -64,11 +66,15 @@ class DashboardActivity : AppCompatActivity() {
             HOMEPAGE_NAVIGATION_DESTINATION.SEARCH -> {
                 when (currentLocation) {
                     "fragment_home" -> {
-                        navController.navigate(R.id.action_homeFragment_to_searchFragment)
+                        val args = Bundle()
+                        args.putString(ARG_LAYOUT, "Home")
+                        navController.navigate(R.id.action_homeFragment_to_searchFragment, args)
                     }
 
                     "fragment_profile" -> {
-                        navController.navigate(R.id.action_profileFragment_to_searchFragment)
+                        val args = Bundle()
+                        args.putString(ARG_LAYOUT, "Profile")
+                        navController.navigate(R.id.action_profileFragment_to_searchFragment,args)
                     }
                 }
             }

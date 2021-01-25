@@ -38,6 +38,8 @@ class HomeFragment : Fragment() {
         binding.cvTwitter.setOnClickListener { showConfirmationDialog(alTwitter) }
         binding.cvTwitch.setOnClickListener { showConfirmationDialog(alTwitch) }
 
+
+
     }
 
     private fun portalCardClicked(link: String) {

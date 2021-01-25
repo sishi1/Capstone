@@ -25,5 +25,9 @@
     <string name="tv_confirmation">Are you sure you want to open the link?</string>
     <string name="confirmation_yes">Yes</string>
     <string name="confirmation_no">No</string>
+    <string name="hint_platform">Steam, Xbox Live, Playstation or Origin ID</string>
+    <string name="tv_platform">Please fill in an account.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
