@@ -22,6 +22,7 @@ class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
+        binding.bottomNav.selectedItemId = R.id.page_home
         setContentView(binding.root)
 
         val navHostFragment =

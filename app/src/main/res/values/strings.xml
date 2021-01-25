@@ -21,4 +21,9 @@
     <string name="tv_twitter">Link to Twitter</string>
     <string name="tv_twitch">Link to Twitch</string>
 
+    <!-- Strings used for confirmation-->
+    <string name="tv_confirmation">Are you sure you want to open the link?</string>
+    <string name="confirmation_yes">Yes</string>
+    <string name="confirmation_no">No</string>
+
 </resources>
