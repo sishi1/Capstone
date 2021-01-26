@@ -9,12 +9,14 @@ import retrofit2.converter.gson.GsonConverterFactory
 class Api {
 
     companion object {
-        private val baseUrl = "https://apex.tracker.gg/apex/"
+        private val baseUrl = "https://public-api.tracker.gg/v2/apex/standard/"
 
         class Interceptor : okhttp3.Interceptor {
             override fun intercept(chain: okhttp3.Interceptor.Chain): Response {
                 val url = chain.request().url.newBuilder().build()
-                val newRequest = chain.request().newBuilder().url(url).build()
+                val newRequest = chain.request().newBuilder()
+                    .addHeader("TRN-Api-Key", "b8950e51-281e-4ea7-a287-8aaa1667e925").url(url)
+                    .build()
                 return chain.proceed(newRequest)
             }
         }
